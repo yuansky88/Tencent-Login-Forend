@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QQ登录 - QQ统一登录</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="tips-box">
+            <div class="tips-content">
+                <img src="assets/img/info.png" alt="1" class="tips-icon" />
+                <div id="tips-texts">消息提示消息提示</div>
+            </div>
+        </div>
+        <div class="login-box">
+            <div class="logo-box">
+                <img src="assets/img/qqmusic_header.png" class="logo" />
+            </div>
+            <form action="post">
+                <div class="login">
+                    <div class="input-line">
+                        <input type="text" name="username" placeholder="QQ号码/手机/邮箱" id="username" required/>
+                        <img src="assets/img/error.png" alt="删除" class="editable-clear-x1" id="username-clear"/>
+                    </div>
+                    <div class="input-line">
+                        <input type="password" name="password" placeholder="请输入你的QQ密码" id="password" maxlength="30" required/>
+                        <img src="assets/img/error.png" alt="删除" class="editable-clear-x2" id="password-clear"/>
+                    </div>
+                </div>
+                <div class="input-button" id="login-button">登录</div>
+            </form>
+        </div>
+        <div class="login-other">
+            <span onclick="window.open('https://accounts.qq.com/psw/find?source_id=3263&account')">找回账号</span>
+            <span class="divide-line"></span>
+            <span onclick="window.open('https://ssl.zc.qq.com/v3/index-chs.html?from=pt')">新用户注册</span>
+        </div>
+    </div>
+</body>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</html>
