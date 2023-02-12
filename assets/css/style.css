@@ -1,0 +1,159 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #f4f5f6;
+}
+.main,
+body,
+html {
+	height: 100%;
+}
+.main {
+	margin: 0 auto;
+}
+.tips-box {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 10px;
+}
+.tips-content {
+	height: 40px;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #525c5f;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	display: none;
+}
+.tips-icon {
+	margin-top: 8px;
+	margin-left: 20px;
+	float: left;
+}
+#tips-texts {
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	margin-left: 20px;
+	float: left;
+}
+.login-box {
+	padding-top: 50px;
+}
+.logo-box {
+	height: 100px;
+	width: 244px;
+	margin: 0px auto;
+}
+.login {
+	height: 112px;
+	max-width: 396px;
+	background-color: #fff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	background-image: linear-gradient(#eeeeee, #eeeeee);
+	background-position: center;
+	background-size: 90% 1px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.login .input-line{
+	height: 56px;
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: flex-start;
+}
+.login input {
+	height: 40px;
+	width: 80%;
+	border: none;
+	outline: none;
+	margin: auto 0px;
+	margin-left: 15px;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.login input::-webkit-input-placeholder {
+	color: #cccccc;
+	font-size: 17px;
+	letter-spacing: 0px;
+}
+#username:valid + .editable-clear-x1,#password:valid + .editable-clear-x2 {
+	height: 20px;
+	width: 20px;
+	display: block;
+	margin: 18px auto;
+}
+.editable-clear-x1,.editable-clear-x2 {
+	display: none;
+}
+.del-img {
+	height: 18px;
+}
+.input-button {
+	border: none;
+	outline: none;
+	height: 45px;
+	max-width: 396px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	background-color: #09f;
+	margin: 0 auto;
+	margin-top: 40px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 45px;
+	font-weight: 400;
+}
+
+.login-other {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.login-other {
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+.divide-line {
+	position: relative;
+	top: 5px;
+	display: inline-block;
+	height: 19px;
+	width: 1px;
+	background-color: #E6E6E6;
+	margin: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+	#tips-content {
+		width: 90%;
+	}
+	.login{
+		width: 90%;
+	}
+	.input-button{
+		width: 90%;
+	}
+}
